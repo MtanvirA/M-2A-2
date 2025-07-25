@@ -11,13 +11,15 @@
   <body class="">
     <header>
       <!-- Navigation section -->
-      <section class="max-w-[1140px] mt-7 mx-auto mb-44">
+      <section class="mx-4 md:max-w-[1140px] mt-7 md:mx-auto mb-16 md:mb-44">
         <div class="flex justify-between items-center">
           <img class="w-[135px] h-[82px]" src="assets/logo.png" alt="" />
           <ul class="flex gap-12">
-            <li class="text-[#252432] font-bold"><a href="">Home</a></li>
-            <li class="text-[#8987A1]"><a href="">Shop</a></li>
-            <li class="text-[#8987A1]"><a href="">About us</a></li>
+            <li class="hidden md:text-[#252432] md:font-bold md:block">
+              <a href="">Home</a>
+            </li>
+            <li class="text-[#8987A1] md:block hidden"><a href="">Shop</a></li>
+            <li class="text-[#8987A1] md:block hidden"><a href="">About us</a></li>
             <li class="flex gap-1">
               <img class="w-6 h-6" src="assets/Cart.png" alt="" /><a href=""
                 >Cart ($56)</a
@@ -28,13 +30,13 @@
       </section>
 
       <!-- Banner Section -->
-      <section class="flex max-w-[1140px] mx-auto justify-between items-end">
+      <section class="max-w-[786px] mx-auto flex  flex-col-reverse md:flex-row md:max-w-[1140px] md:mx-auto md:justify-between md:items-end">
         <!-- details part -->
-        <div>
-          <h3 class="mb-2 noto-serif-font font-bold text-6xl">
+        <div class="mt-7 md:m-0">
+          <h3 class="mb-2 noto-serif-font font-bold text-4xl md:text-6xl">
             ALWAYS <span class="noto-serif-font text-[#E95A08]">FRESH</span>
           </h3>
-          <h3 class="mb-2 noto-serif-font font-bold text-6xl text-[#E95A08]">
+          <h3 class="mb-2 noto-serif-font font-bold text-4xl md:text-6xl text-[#E95A08]">
             FLOWERS
           </h3>
 
@@ -46,9 +48,7 @@
           </p>
         </div>
         <!-- image part -->
-        <div class="w-[570px] h-[355px]">
-          <img src="assets/hero-flower.png" alt="" />
-        </div>
+        <img src="assets/hero-flower.png" alt="" />
       </section>
     </header>
 
